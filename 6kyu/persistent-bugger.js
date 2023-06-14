@@ -12,7 +12,7 @@ function persistence(num) {
   let count = 0;
   while (num.toString().length > 1) {
     num = num
-      .toString() //convert num to a string foe example: 999 --> "999"
+      .toString() //convert num to a string example: 999 --> "999"
       .split("") //split the string into an array of single digits for example: "999" --> ["9", "9", "9"]
       .reduce((a, b) => a * b); //multiply the digits together for example: ["9", "9", "9"] --> 9 * 9 * 9 = 729
     count++;
