@@ -10,7 +10,7 @@
 //solution:
 
 function addBinary(a, b) {
-  return (a + b).toString(2);
+  return (a + b).toString(2); //toString(2) converts the sum to binary (base 2)
 }
 
 //sample runnings:
