@@ -20,9 +20,6 @@ The repository is organized into directories based on the kyu level of the probl
 │ └── ...
 └── ...
 
-bash
-Copy code
-
 ## How to Use
 
 1. Clone the repository to your local machine:
