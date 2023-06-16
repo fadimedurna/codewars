@@ -24,7 +24,7 @@ The repository is organized into directories based on the kyu level of the probl
 
 1. Clone the repository to your local machine:
 
-git clone https://github.com/your-username/codewars-solutions.git
+git clone https://github.com/fadimedurna/codewars-solutions.git
 
 2. Navigate to the specific kyu level directory and find the problem you're interested in.
 
