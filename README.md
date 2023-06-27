@@ -6,15 +6,15 @@ This repository contains my solutions to programming questions from Codewars. I 
 
 The repository is organized into directories based on the kyu level of the problems. Each directory contains the solutions to multiple problems of that particular difficulty level. Additionally, each problem solution is stored in a separate JavaScript file.
 
-├── 8-kyu
-│ ├── problem1.js
-│ ├── problem2.js
-│ └── ...
 ├── 7-kyu
 │ ├── problem1.js
 │ ├── problem2.js
 │ └── ...
 ├── 6-kyu
+│ ├── problem1.js
+│ ├── problem2.js
+│ └── ...
+├── 5-kyu
 │ ├── problem1.js
 │ ├── problem2.js
 │ └── ...
