@@ -27,18 +27,18 @@ class PaginationHelper {
 
   // Returns the total number of items within the entire collection
   itemCount() {
-    return this.collection.length;
+    return this.collection.length; //6
   }
 
   // Returns the number of pages
   pageCount() {
-    return Math.ceil(this.collection.length / this.itemsPerPage);
+    return Math.ceil(this.collection.length / this.itemsPerPage); //6 / 4 = 1.5, ceil(1.5) = 2
   }
 
   // Returns the number of items on the current page. page_index is zero-based.
   // This method should return -1 for pageIndex values that are out of range
   pageItemCount(pageIndex) {
-    const totalPages = this.pageCount();
+    const totalPages = this.pageCount(); //2
 
     if (pageIndex < 0 || pageIndex >= totalPages) {
       return -1; // Invalid page index
@@ -46,9 +46,8 @@ class PaginationHelper {
 
     if (pageIndex === totalPages - 1) {
       // Last page
-      return this.collection.length % this.itemsPerPage || this.itemsPerPage;
+      return this.collection.length % this.itemsPerPage || this.itemsPerPage; // || means in here that if the first condition is false, then return the second condition
     }
-
     return this.itemsPerPage;
   }
 
@@ -59,7 +58,7 @@ class PaginationHelper {
       return -1; // Invalid item index
     }
 
-    return Math.floor(itemIndex / this.itemsPerPage);
+    return Math.floor(itemIndex / this.itemsPerPage); // 5 / 4 = 1.25, floor(1.25) = 1
   }
 }
 
