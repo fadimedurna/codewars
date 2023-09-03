@@ -25,9 +25,8 @@
 //in the english alphabet.
 
 //solution:
-//lets say poly = "2xy-yx"
 function simplify(poly) {
-  const terms = poly.match(/[-]?\d*[a-z]+/g).map(createTerm);
+  const terms = poly.match(/[-]?\d*[a-z]+/g).map(createTerm); //[-] means optional negative sign, \d* means optional digits, [a-z]+ means one or more letters
   const termMap = {};
   terms.forEach((t) => (termMap[t.vars] = (termMap[t.vars] || 0) + t.count));
   const reducedTerms = Object.keys(termMap)
@@ -41,7 +40,7 @@ function createTerm(s) {
   const sign = s[0] === "-" ? -1 : 1;
   const parsedCount = parseInt(s, 10);
   const count = isNaN(parsedCount) ? sign : parsedCount;
-  const vars = s.match(/[a-z]/g).sort().join("");
+  const vars = s.match(/[a-z]/g).sort().join(""); //match all letters, sort them, and join them
   return { count: count, vars: vars };
 }
 
